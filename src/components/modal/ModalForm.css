@@ -1,0 +1,168 @@
+.modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container .submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: lime;
+  border-radius: 100%;
+}
+
+.modal-container .submit-button p {
+  color: #fff;
+}
+
+.modal-container .submit-button:hover {
+  background-color: #bbff00;
+}
+
+.modal-container .submit-button:hover p {
+  color: #9b9b9b;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.contact-form .contact-form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-top: 5%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding-bottom: 2rem;
+}
+
+.contact-form .contact-form-section .handleClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contact-form .contact-form-section .handleClose .modal-close-btn {
+  background-color: #fff;
+  border: none;
+  color: #909090;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.contact-form .contact-form-section .handleClose .modal-close-btn:hover {
+  color: #252525;
+}
+
+.contact-form .contact-form-section .handleClose .modal-close-btn:active {
+  outline: none;
+}
+
+.contact-form .contact-form-section .input-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+.contact-form .contact-form-section .input-form input {
+  width: 80%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  outline: none;
+}
+
+.contact-form .contact-form-section .input-form input:focus {
+  border-bottom: 1px solid #008cff;
+}
+
+.contact-form .contact-form-section .input-form .modal-add-btn {
+  margin-top: 20px;
+  background-color: #0062ff;
+  border: none;
+  height: 35px;
+  width: 65px;
+  border-radius: 45px;
+  color: #fff;
+}
+
+.contact-form .contact-form-section .input-form .modal-add-btn:focus,
+.contact-form .contact-form-section .input-form .modal-add-btn:active,
+.contact-form .contact-form-section .input-form .modal-add-btn:hover {
+  background-color: rgba(0, 98, 255, 0.8);
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form .contact-form-section {
+    width: 50%;
+    padding-bottom: 2rem;
+  }
+  .contact-form .contact-form-section .input-form input {
+    width: 65%;
+    height: 20px;
+  }
+  .contact-form .contact-form-section .input-form .modal-add-btn {
+    height: 25px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contact-form .contact-form-section {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=ModalForm.css.map */

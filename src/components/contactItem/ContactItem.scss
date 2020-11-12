@@ -1,0 +1,68 @@
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;  
+  .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    margin-bottom: .5rem;
+    .contact-title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .contact-avatar{
+        padding-right: 1rem;
+        img{
+          width: 35px;
+          height: 35px;
+        }        
+      }     
+     .contact-info{
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+        .person-name{
+          display: flex;
+          flex-direction: row;
+          margin-bottom: .5rem;
+          .name{
+            margin-right: .5rem;
+          }
+        }
+      }
+      .contact-buttons{
+        display: flex;
+        .contact-delete-btn{
+          background-color: #ff3300;
+          border: none;
+          border-radius: 5px;
+          margin-right: 1rem;
+          height: 20px;
+          width: 24px;
+          color: #fff;
+        }
+        .contact-delete-btn:hover{
+            background-color: #d32a00;
+        }
+        .contact-edit-btn{
+          color: #fff;
+          background-color: #0077ff;
+          border: none;
+          border-radius: 5px;
+          margin-right: 1rem;
+          height: 20px;
+          width: 24px;
+        }
+        .contact-edit-btn:hover{
+            background-color: #00eaff;
+        }
+      }
+    }
+  
+  }
+}

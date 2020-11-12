@@ -1,0 +1,119 @@
+.modal-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 100%;
+    p{
+      color: #fff;
+    }
+  }
+  .submit-button:hover{
+    background-color: rgb(187, 255, 0);
+    p{
+      color: rgb(155, 155, 155);
+    }
+  } 
+}
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+ .contact-form-section{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  padding-bottom: 2rem;
+    .handleClose{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    .modal-close-btn{
+      background-color: #fff;
+      border: none;
+      color: rgb(144, 144, 144);
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+    .modal-close-btn:hover{
+      color: rgb(37, 37, 37);
+    }
+    .modal-close-btn:active{
+      outline: none;
+    }
+    }
+    .input-form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      justify-content: center;
+      padding-top: 2rem;
+      input{
+      width: 80%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 1.5rem;
+      padding-left: .5rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      outline: none;
+      }
+      input:focus{
+        border-bottom: 1px solid #008cff;
+      }
+      .modal-add-btn{
+      margin-top: 20px;
+      background-color:rgb(0, 98, 255);
+      border: none;
+      height: 35px;
+      width: 65px;
+      border-radius: 45px;
+      color: #fff;
+      }
+      .modal-add-btn:focus,
+      .modal-add-btn:active,
+      .modal-add-btn:hover{
+        background-color: rgba(0, 98, 255, 0.8);
+        outline: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form{
+    .contact-form-section{
+      width: 50%;
+      padding-bottom: 2rem;
+      .input-form{
+        input{
+        width: 65%;
+        height: 20px;
+        }
+        .modal-add-btn{
+          height: 25px;
+          width: 50px;
+        }
+      }
+    }   
+  }
+}
+@media screen and (max-width: 390px) {
+  .contact-form{
+    .contact-form-section{
+      width: 50%;
+    }   
+  }
+}
